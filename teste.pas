@@ -1,30 +1,60 @@
-program exemplo;  // cPalRes
-var
-  xpt421z: integer;  // cId, cInt
-  valor: integer;  // cId, cInt
-begin
-  valor := 127;  // cAtrib, cInt
-  xpt421z := 42;  // cAtrib, cInt
-  writeln('Teste de string');  // cString
-  For i := 1 to 10 do  // cPalRes, cId, cInt
-  begin
-    valor := valor + 1;  // cAtrib, cInt, cAdicao
-    valor := valor - 1;  // cAtrib, cInt, cSubtracao
-    valor := valor * 2;  // cAtrib, cInt, cMultiplicacao
-    valor := valor / 2;  // cAtrib, cInt, cDivisao
-    if valor > 10 then  // cId, cMaior, cPalRes, cDoisPontos
-      writeln('Valor é maior que 10')  // cString
+{ Programa que nao faz nada }
+Program MuitoDoido;
+Var TempoEmAnos, ValorSalario, x, y, z, a, b, c : Integer; 
+Begin 
+    If (TempoEmAnos > 10) Then
+    Begin
+        ValorSalario := 100; 
+    End
+    Else Begin
+        ValorSalario := ValorSalario * 2;
+    End;
+    Write(ValorSalario);
+    x := 10;
+    write(x);
+    x := 2 + 5 * 3;
+    write('Valor: ');
+    write(x);
+    read(x);
+    read(y);
+    z := x * y;
+    write('Resultado: ');
+    write(z);
+    read(x);
+    read(y);
+    if (x >= 10) then
+    begin
+        write(x);
+    end
     else
-      writeln('Valor não é maior que 10');  // cString
-  end;
-  123;  // cInt
-  xpt421z := xpt421z + 3;  // cId, cAdicao
-  writeln('Valor de xpt421z: ', xpt421z);  // cString, cId
+    begin
+        write(y);
+    end;
+    c := 1;
+    while (c <= 10) do
+    begin
+        write(c);
+        c := c + 1;
+    end;
+    c := 1;
+    repeat
+        write(c);
+        c := c + 1;
+    until (c > 10);
+    for c := 1 to 10 do
+    begin
+        write(c);
+    end;
+    write('Informe a: ');
+    read(a);
+    write('Informe b: ');
+    read(b);
+    if (a > 0 and b > 0) then
+    begin
+        writeln('Positivos');
+    end
+    else
+    begin
+        writeln('Um dos valores não é positivo');
+    end;
 end.
-<=
-
-{comentario}
->=
-==
->
-<

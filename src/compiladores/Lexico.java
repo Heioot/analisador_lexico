@@ -209,6 +209,15 @@ public class Lexico {
                     }
                 }
 
+            else if(caractere == 65535){
+                token = new Token(linha, coluna);
+                token.setClasse(ClasseToken.cEOF);
+                String valor = "sem valor";
+                System.out.println("linha=" + token.getLinha() + ", coluna=" + token.getColuna() +
+                    " - Token [classe=" + token.getClasse() + ", valor=" + valor + "]");
+                return token;
+            }
+
                 else {
                     System.err.println("Erro léxico. Caractere inválido = " + caractere);
                     System.exit(-1);
